@@ -647,7 +647,7 @@ o	Billionaire: $1B or more</inlineHelpText>
                 </value>
                 <value>
                     <fullName>Publications</fullName>
-                    <default>false</default>
+                    <default>true</default>
                     <label>Publications</label>
                 </value>
                 <value>

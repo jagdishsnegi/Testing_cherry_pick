@@ -32,6 +32,7 @@ Public Class CaseTriggerHandler
             if(c.contactid != null)
             {
                 c.AccountId = c.contact.accountid;
+				//c.AccountId = c.contact.accountid;
                 
             }
         }
