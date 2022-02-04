@@ -11,7 +11,6 @@ Public Class CaseTriggerHandler
         }
         
         List<Case> listCa=[select id,contactid,contact.accountid from Case where id in :idsOfCase];
-		//List<Case> listCa=[select id,contactid,contact.accountid from Case where id in :idsOfCase];
         
         for(Case c:listCa)
         {
@@ -21,7 +20,6 @@ Public Class CaseTriggerHandler
                 c.AccountId = c.contact.accountid;
 			}
             listToUpdateCase.add(c);
-			//listToUpdateCase.add(c);
         }
         
         Update listToUpdateCase;
@@ -34,7 +32,6 @@ Public Class CaseTriggerHandler
             if(c.contactid != null)
             {
                 c.AccountId = c.contact.accountid;
-				//c.AccountId = c.contact.accountid;
                 
             }
         }
