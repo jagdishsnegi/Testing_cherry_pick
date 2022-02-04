@@ -11,7 +11,8 @@ public with Sharing class AccountMergeStatus {
         Account_Merge__c ams = [SELECT Id, Name, Status__c FROM Account_Merge__c WHERE Id =: accountmergeid
             AND Status__c = 'Processed'
         ];
-        system.debug('ams@123'+ams);
+        system.debug('ams@123'+ams); 
+		system.debug('testing from test3'+ams); 
         return ams;
     }
 }
