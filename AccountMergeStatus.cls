@@ -12,6 +12,8 @@ public with Sharing class AccountMergeStatus {
             AND Status__c = 'Processed'
         ];
         system.debug('ams@123'+ams);
+		system.debug('testing from test2'+ams);
+		system.debug('testing from test2'+ams);
         return ams;
     }
 }
